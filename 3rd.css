@@ -1,0 +1,48 @@
+<style type="text/css">
+	.middled {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.cardd {
+		cursor: pointer;
+		width: 10%;
+		height: 10%;
+	}
+
+	.frontd, .backd {
+		margin-left: -4px;
+		width: 19.2%;
+		height: 34.5%;
+		overflow: hidden;
+		backface-visibility: hidden;
+		position: absolute;
+		transition: transform .6s linear;
+
+	}
+	.frontd img {
+		height: 100%;
+	}
+	.frontd {
+		transform: perspective(600px) rotateY(0deg);
+	}
+	.backd {
+		background: #f1f1f1;
+		transform: perspective(600px) rotateY(180deg);
+	}
+	.back-contentd {
+		color: black;
+		text-align: center;
+		width: 80%;
+		margin: 0;
+		padding: 0;
+
+	}
+	.cardd:hover > .frontd {
+		transform: perspective(600px) rotateY(-180deg);
+	}
+	.cardd:hover > .backd {
+		transform: perspective(600px) rotateY(0deg);
+	}
+</style>

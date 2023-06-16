@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	.developertitle {
+			background-color: white;
+			padding:5px;
+			text-align: center;
+			font-family: arial;
+			font-size: 300%;
+
+		}
+		.ic12, .ict11 {
+			float:left;
+			padding:5px;
+			font-size: px;
+			margin
+
+		}
+
+		h2 {
+			font-family: Arial Narrow ;
+
+		}
+
+		.developer{
+			display: flex;
+			background-color: #eeeeee;
+		}
+		.developer25 {
+			margin: 0;
+			padding: 0;
+			flex: 25%;
+			background-image: url(chip.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			margin:10px;
+			box-shadow: 2px 4px 5px grey;
+			border: 2px solid white;
+		}
+		h2{
+			font-size:30px;
+		}
+		span{
+			font-size: 30px;
+		}
+</style>
+<body>
+
+</body>
+</html>

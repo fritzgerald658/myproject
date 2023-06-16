@@ -1,0 +1,48 @@
+<style type="text/css">
+	.middlec {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.cardc {
+		cursor: pointer;
+		width: 10%;
+		height: 10%;
+	}
+
+	.frontc, .backc {
+		margin-left: -4px;
+		width: 24.2%;
+		height: 43.3%;
+		overflow: hidden;
+		backface-visibility: hidden;
+		position: absolute;
+		transition: transform .6s linear;
+
+	}
+	.frontc img {
+		height: 100%;
+	}
+	.frontc {
+		transform: perspective(600px) rotateY(0deg);
+	}
+	.backc {
+		background: #f1f1f1;
+		transform: perspective(600px) rotateY(180deg);
+	}
+	.back-contentc {
+		color: black;
+		text-align: center;
+		width: 80%;
+		margin: 0;
+		padding: 0;
+
+	}
+	.cardc:hover > .frontc {
+		transform: perspective(600px) rotateY(-180deg);
+	}
+	.cardc:hover > .backc {
+		transform: perspective(600px) rotateY(0deg);
+	}
+</style>
